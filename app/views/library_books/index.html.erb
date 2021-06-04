@@ -1,0 +1,7 @@
+<h1> Our Books </h1>
+
+<% if !@books.blank? %>
+    <% for book in @books %>
+       <%= render partial: "one_book", locals: {book: book} %>
+    <%end%>
+<%end%>
